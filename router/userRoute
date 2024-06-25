@@ -1,0 +1,9 @@
+const express = require("express");
+const router = express.Router();
+
+const { renderHome, addProduct } = require("../controller/usercontroller");
+
+router.get("/", renderHome);
+router.post("/add", addProduct);
+
+module.exports = router;
